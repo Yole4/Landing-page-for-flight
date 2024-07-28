@@ -9,29 +9,28 @@ function Home() {
         <div>
             <body>
                 <div className="body-container">
-                    <div style={{ display: 'flex', alignItems: 'start', gap: '10px' }}>
-                        <div>
+                    <div className='radio-line'>
+                        <div className='radio-container'>
                             <input type="radio" checked />
                             <label >Return</label>
                         </div>
-                        <div>
+                        <div className='radio-container'>
                             <input type="radio" />
                             <label >One-Way</label>
                         </div>
-                        <div>
+                        <div className='radio-container'>
                             <input type="radio" />
                             <label >Multi-City</label>
                         </div>
                     </div>
 
-
-                    <div style={{display: 'flex', gap: '10px', alignItems: 'end'}}>
+                    <div className='input-line'>
                         <div style={{display: 'flex', flexDirection: 'column'}}>
                             <label htmlFor="">From</label>
                             <input type="text" />
                         </div>
                         <div>
-                            <label htmlFor=""><GoArrowSwitch /></label>
+                            <label htmlFor=""><GoArrowSwitch className='switch'/></label>
                         </div>
                         <div style={{display: 'flex', flexDirection: 'column'}}>
                             <label htmlFor="">To</label>

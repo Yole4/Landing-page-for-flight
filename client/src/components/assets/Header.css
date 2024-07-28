@@ -119,6 +119,10 @@ nav ul li a {
     font-size: 20px;
 }
 
+.menu{
+    display: none;
+}
+
 
 /* 970px */
 @media screen and (max-width: 970px) {
@@ -131,13 +135,44 @@ nav ul li a {
     .container{
         width: 85%;
     }
+    .book{
+        position: absolute;
+        right: 50px;
+        top: 18px;
+    }
+    .support-btn{
+        position: absolute;
+        right: 40px;
+        top: 0;
+    }
+    .dropdown{
+        position: absolute;
+        right: 0;
+        margin-top: 20px;
+    }
 }
 
 
 /* 765px */
 @media screen and (max-width: 765px) {
-    .r-sup{
+    .header-icon{
         display: none;
+    }
+    .support-btn{
+        display:block;
+        font-size: 23px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .menu{
+        display: block;
+    }
+    .container{
+        width: 98%;
+    }
+    .book{
+        right: 20px;
     }
 }
 
@@ -157,4 +192,50 @@ nav ul li a {
     height: auto;
     background-color: #fff;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    width: 75%;
+}
+
+.radio-line{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    justify-content: start;
+}
+.radio-container input{
+    width: 20px;
+    height: 20px;
+}
+.radio-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-line{
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    margin-top: 15px;
+    margin: 20px 5px 20px 5px;
+    /* justify-content: center; */
+}
+.input-line label{
+    padding: 5px 0 5px 0;
+}
+.input-line input{
+    height: 35px;
+    padding-left: 20px;
+    border-radius: 10px;
+    
+}
+.switch{
+    font-size: 23px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.input-line button{
+    font-size: 15px;
+    margin-bottom: 8px;
 }

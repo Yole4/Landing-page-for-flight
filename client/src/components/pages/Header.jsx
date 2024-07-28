@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { TbBrandBooking } from "react-icons/tb";
 import { MdContactSupport } from "react-icons/md";
+import { IoMdMenu } from "react-icons/io";
 
 function Header() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -12,7 +13,7 @@ function Header() {
                 <div className="container">
                     <nav>
                         <ul className='nav-left'>
-                            <h1 className="logo">My Website</h1>
+                            <h1 className="logo">My</h1>
                             <li><a href="#flight">Flight</a></li>
                             <li><a href="#hotels">Hotels</a></li>
                             <li><a href="#rentalCars">Rental Cars</a></li>
@@ -20,7 +21,7 @@ function Header() {
                     </nav>
                     <nav>
                         <ul className='nav-right' >
-                            <li><button className='support-btn' onClick={(e) => setIsDropdownOpen(!isDropdownOpen)}><span className='book'><MdContactSupport className='header-icon r-sup' /><span className="header-text">Support</span></span></button>
+                            <li><button className='support-btn' onClick={(e) => setIsDropdownOpen(!isDropdownOpen)}><span className='book'><MdContactSupport className='header-icon r-sup' /><IoMdMenu className='menu'/><span className="header-text">Support</span></span></button>
                                 {isDropdownOpen && (
                                     <ul className="dropdown" onClick={(e) => e.stopPropagation()}>
                                         <li><a href="#contact">Contact us</a></li>
